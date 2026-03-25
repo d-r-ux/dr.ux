@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dr.ux — UX Designer Portfolio</title>
+  <meta name="description" content="UX Designer Portfolio — Crafting human-centered digital experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="light">
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">dr.ux</span>
+        <span class="logo-dot"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+        <li><a href="#work" class="nav-link" data-text="Work">Work</a></li>
+        <li><a href="#process" class="nav-link" data-text="Process">Process</a></li>
+        <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-icon sun">&#9788;</span>
+          <span class="theme-icon moon">&#9790;</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">01 — About</a></li>
+      <li><a href="#work" class="mobile-link">02 — Work</a></li>
+      <li><a href="#process" class="mobile-link">03 — Process</a></li>
+      <li><a href="#contact" class="mobile-link">04 — Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-inner container">
+        <div class="hero-label">
+          <span class="label-line"></span>
+          <span>UX Designer & Researcher</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-line" data-delay="0">Designing</span>
+          <span class="hero-line hero-italic" data-delay="150">experiences</span>
+          <span class="hero-line" data-delay="300">that matter.</span>
+        </h1>
+        <p class="hero-sub" id="hero-sub"></p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="6">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="40">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="12">0</span><span class="stat-unit"></span>
+          <span class="stat-label">Design Systems Built</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-label reveal">
+          <span class="label-num">01</span>
+          <span>About</span>
+        </div>
+        <div class="about-grid">
+          <div class="about-image-wrap reveal">
+            <div class="about-image-placeholder">
+              <div class="image-initials">UX</div>
+              <div class="image-overlay-text">Add your photo</div>
+            </div>
+            <div class="about-image-tag">
+              <span>Currently available</span>
+              <span class="availability-dot"></span>
+            </div>
+          </div>
+          <div class="about-content">
+            <h2 class="about-title reveal">
+              I'm a UX Designer passionate about turning complexity into clarity.
+            </h2>
+            <p class="about-text reveal">
+              With a background in <em>Human-Centered Design</em>, I blend research, strategy, and craft to create digital products that feel intuitive and purposeful. I've worked across mobile, web, and enterprise — always with the end user at the center.
+            </p>
+            <p class="about-text reveal">
+              My process starts with understanding people — their goals, frustrations, and mental models — before a single pixel is touched. Good design is invisible. Great design is unforgettable.
+            </p>
+            <div class="about-skills reveal">
+              <div class="skill-tag">UX Research</div>
+              <div class="skill-tag">Interaction Design</div>
+              <div class="skill-tag">Prototyping</div>
+              <div class="skill-tag">Design Systems</div>
+              <div class="skill-tag">Figma</div>
+              <div class="skill-tag">Usability Testing</div>
+              <div class="skill-tag">Information Architecture</div>
+              <div class="skill-tag">Product Strategy</div>
+            </div>
+            <div class="about-links reveal">
+              <a href="#" class="about-link" target="_blank" rel="noopener">
+                <span>Resume</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#" class="about-link" target="_blank" rel="noopener">
+                <span>LinkedIn</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#" class="about-link" target="_blank" rel="noopener">
+                <span>Dribbble</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label reveal">
+            <span class="label-num">02</span>
+            <span>Selected Work</span>
+          </div>
+          <div class="work-filter reveal" id="work-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="research">Research</button>
+            <button class="filter-btn" data-filter="system">Systems</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <article class="project-card reveal" data-category="mobile web">
+            <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+              <div class="project-placeholder-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="10" y="6" width="28" height="36" rx="4" stroke="white" stroke-width="2"/><circle cx="24" cy="37" r="2" fill="white"/><rect x="16" y="14" width="16" height="2" rx="1" fill="white"/><rect x="16" y="19" width="10" height="2" rx="1" fill="white"/></svg>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link-btn">View Case Study →</a>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Mobile</span>
+                <span class="tag">iOS/Android</span>
+              </div>
+              <h3 class="project-title">HealthTrack App Redesign</h3>
+              <p class="project-desc">Reimagined the onboarding flow and core tracking experience for 2M+ users. Increased retention by 34% through research-driven iteration.</p>
+              <div class="project-result">
+                <span class="result-icon">↑</span>
+                <span>34% retention increase</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web research">
+            <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+              <div class="project-placeholder-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="4" stroke="white" stroke-width="2"/><rect x="12" y="16" width="12" height="10" rx="2" fill="white" fill-opacity="0.5"/><rect x="28" y="16" width="10" height="4" rx="1" fill="white" fill-opacity="0.7"/><rect x="28" y="22" width="8" height="4" rx="1" fill="white" fill-opacity="0.5"/></svg>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link-btn">View Case Study →</a>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Web</span>
+                <span class="tag">Research</span>
+              </div>
+              <h3 class="project-title">Enterprise Dashboard UX</h3>
+              <p class="project-desc">Conducted 40+ user interviews to redesign a complex B2B analytics platform. Reduced task completion time by 52%.</p>
+              <div class="project-result">
+                <span class="result-icon">↓</span>
+                <span>52% faster task completion</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="system">
+            <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+              <div class="project-placeholder-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" stroke="white" stroke-width="2"/><circle cx="24" cy="24" r="6" fill="white" fill-opacity="0.6"/><line x1="24" y1="10" x2="24" y2="6" stroke="white" stroke-width="2" stroke-linecap="round"/><line x1="24" y1="38" x2="24" y2="42" stroke="white" stroke-width="2" stroke-linecap="round"/><line x1="10" y1="24" x2="6" y2="24" stroke="white" stroke-width="2" stroke-linecap="round"/><line x1="38" y1="24" x2="42" y2="24" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link-btn">View Case Study →</a>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Design System</span>
+                <span class="tag">Figma</span>
+              </div>
+              <h3 class="project-title">Nexus Design System</h3>
+              <p class="project-desc">Built a comprehensive design system from the ground up: 200+ components, documentation, governance model, and adoption playbook.</p>
+              <div class="project-result">
+                <span class="result-icon">↑</span>
+                <span>60% faster handoffs</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="research">
+            <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+              <div class="project-placeholder-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="22" cy="21" r="12" stroke="white" stroke-width="2"/><line x1="30" y1="30" x2="42" y2="42" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link-btn">View Case Study →</a>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Research</span>
+                <span class="tag">Strategy</span>
+              </div>
+              <h3 class="project-title">Accessibility Audit & Roadmap</h3>
+              <p class="project-desc">Led a cross-functional WCAG 2.1 AA compliance initiative. Identified 180+ issues, prioritized fixes, and trained 3 engineering teams.</p>
+              <div class="project-result">
+                <span class="result-icon">✓</span>
+                <span>WCAG 2.1 AA compliant</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="mobile">
+            <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+              <div class="project-placeholder-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M24 8C15.163 8 8 15.163 8 24s7.163 16 16 16 16-7.163 16-16S32.837 8 24 8z" stroke="white" stroke-width="2"/><path d="M24 16v8l6 3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link-btn">View Case Study →</a>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Mobile</span>
+                <span class="tag">Fintech</span>
+              </div>
+              <h3 class="project-title">PayFlow Mobile Banking</h3>
+              <p class="project-desc">Designed the end-to-end experience for a challenger bank targeting Gen Z. From zero to 50k users in 3 months after launch.</p>
+              <div class="project-result">
+                <span class="result-icon">↑</span>
+                <span>50k users in 3 months</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web system">
+            <div class="project-image" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+              <div class="project-placeholder-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="14" height="14" rx="3" stroke="white" stroke-width="2"/><rect x="26" y="8" width="14" height="14" rx="3" stroke="white" stroke-width="2"/><rect x="8" y="26" width="14" height="14" rx="3" stroke="white" stroke-width="2"/><rect x="26" y="26" width="14" height="14" rx="3" stroke="white" stroke-width="2"/></svg>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link-btn">View Case Study →</a>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="tag">Web</span>
+                <span class="tag">SaaS</span>
+              </div>
+              <h3 class="project-title">SaaS Onboarding Overhaul</h3>
+              <p class="project-desc">Redesigned the 7-step onboarding into a progressive, contextual experience. Reduced time-to-value from 14 days to 3 days.</p>
+              <div class="project-result">
+                <span class="result-icon">↓</span>
+                <span>Time-to-value: 14d → 3d</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-label reveal">
+          <span class="label-num">03</span>
+          <span>My Process</span>
+        </div>
+        <h2 class="process-headline reveal">
+          Design is a <em>conversation</em><br>between people and products.
+        </h2>
+        <div class="process-steps">
+
+          <div class="process-step reveal" data-step="01">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Discover</h3>
+              <p>User interviews, competitive analysis, heuristic evaluation. I listen before I draw. Understanding the problem space deeply is the foundation of every good solution.</p>
+              <ul class="step-methods">
+                <li>User Interviews</li>
+                <li>Contextual Inquiry</li>
+                <li>Competitive Analysis</li>
+                <li>Stakeholder Workshops</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="process-step reveal" data-step="02">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Define</h3>
+              <p>Synthesis, affinity mapping, personas, and journey maps. I turn raw research into clear design principles and prioritized opportunities that the whole team rallies around.</p>
+              <ul class="step-methods">
+                <li>Affinity Mapping</li>
+                <li>User Personas</li>
+                <li>Journey Maps</li>
+                <li>Jobs-to-be-Done</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="process-step reveal" data-step="03">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>Design</h3>
+              <p>From rough sketches to high-fidelity interactive prototypes. I iterate fast, test early, and embrace feedback. The best designs are never finished on the first try.</p>
+              <ul class="step-methods">
+                <li>Sketching & Wireframing</li>
+                <li>High-Fi Prototypes</li>
+                <li>Design Systems</li>
+                <li>Micro-interactions</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="process-step reveal" data-step="04">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3>Validate</h3>
+              <p>Usability testing, A/B experiments, accessibility audits. Shipping is not the finish line. I measure outcomes and use data to inform the next iteration cycle.</p>
+              <ul class="step-methods">
+                <li>Usability Testing</li>
+                <li>A/B Testing</li>
+                <li>Accessibility Audits</li>
+                <li>Analytics Review</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials-track" id="testimonials-track">
+          <div class="testimonial active">
+            <blockquote>
+              "Their ability to turn ambiguous product requirements into clear, elegant designs is exceptional. They brought a level of empathy and rigor to our UX process that raised the bar for the whole team."
+            </blockquote>
+            <cite>
+              <div class="cite-avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">PM</div>
+              <div>
+                <strong>Product Manager</strong>
+                <span>Fortune 500 Tech Company</span>
+              </div>
+            </cite>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              "The research they conducted was transformative. We went from guessing what users wanted to having a deep, validated understanding of their needs — and our product metrics reflected that."
+            </blockquote>
+            <cite>
+              <div class="cite-avatar" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">CTO</div>
+              <div>
+                <strong>CTO</strong>
+                <span>Series B Startup</span>
+              </div>
+            </cite>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              "Working with them on our design system was a game changer. Documentation, governance, adoption strategy — they thought of everything we didn't know we needed."
+            </blockquote>
+            <cite>
+              <div class="cite-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">DL</div>
+              <div>
+                <strong>Design Lead</strong>
+                <span>Global Fintech Platform</span>
+              </div>
+            </cite>
+          </div>
+        </div>
+        <div class="testimonials-nav">
+          <button class="t-nav-btn" id="t-prev" aria-label="Previous testimonial">←</button>
+          <div class="t-dots" id="t-dots">
+            <button class="t-dot active"></button>
+            <button class="t-dot"></button>
+            <button class="t-dot"></button>
+          </div>
+          <button class="t-nav-btn" id="t-next" aria-label="Next testimonial">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-label reveal">
+          <span class="label-num">04</span>
+          <span>Contact</span>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-left">
+            <h2 class="contact-headline reveal">
+              Let's build something<br><em>worth using.</em>
+            </h2>
+            <p class="contact-text reveal">
+              Open to full-time roles, freelance projects, and consulting engagements. If you have an interesting design challenge, I'd love to hear about it.
+            </p>
+            <div class="contact-social reveal">
+              <a href="mailto:hello@drux.design" class="social-link">
+                <span class="social-icon">✉</span>
+                <span>hello@drux.design</span>
+              </a>
+              <a href="#" class="social-link" target="_blank" rel="noopener">
+                <span class="social-icon">in</span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" class="social-link" target="_blank" rel="noopener">
+                <span class="social-icon">⊛</span>
+                <span>Dribbble</span>
+              </a>
+              <a href="#" class="social-link" target="_blank" rel="noopener">
+                <span class="social-icon">◎</span>
+                <span>Medium</span>
+              </a>
+            </div>
+          </div>
+          <div class="contact-right reveal">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" autocomplete="name" required />
+                <span class="form-error" id="name-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="jane@company.com" autocomplete="email" required />
+                <span class="form-error" id="email-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected>What's this about?</option>
+                  <option value="fulltime">Full-time opportunity</option>
+                  <option value="freelance">Freelance project</option>
+                  <option value="consulting">Consulting</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+                <span class="char-count" id="char-count">0 / 500</span>
+                <span class="form-error" id="message-error"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-spinner">⟳</span>
+              </button>
+              <div class="form-success" id="form-success">
+                <span>✓</span> Message sent! I'll be in touch within 48 hours.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">dr.ux</span>
+        <span class="footer-copy">© 2026 — Designed & built with intention.</span>
+        <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+          <span>↑</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
